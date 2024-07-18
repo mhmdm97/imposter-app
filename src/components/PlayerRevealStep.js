@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { getRandomFromList, getRandomInt } from "../helpers/StaticMethods"
 function PlayerRevealStep(props) {
-    const [footballerList, setFootballerList] = useState([
+    const [footballerList] = useState([
         "Lionel Messi",
         "Kylian Mbappé",
         "Robert Lewandowski",
