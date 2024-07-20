@@ -1,50 +1,8 @@
 import { useEffect, useState } from "react"
 import { getRandomFromList, getRandomInt } from "../helpers/StaticMethods"
+import { playerList } from "../constants/constants"
 function PlayerRevealStep(props) {
-    const [footballerList] = useState([
-        "Lionel Messi",
-        "Kylian Mbappé",
-        "Robert Lewandowski",
-        "Kevin De Bruyne",
-        "Erling Haaland",
-        "Virgil van Dijk",
-        "Trent Alexander-Arnold",
-        "Jorginho",
-        "Mohamed Salah",
-        "Karim Benzema",
-        "Casemiro",
-        "Thibaut Courtois",
-        "João Cancelo",
-        "Marquinhos",
-        "Luis Suárez",
-        "Son Heung-Min",
-        "Alisson Becker",
-        "Ruben Dias",
-        "Joshua Kimmich",
-        "Harry Kane",
-        "Bruno Fernandes",
-        "Raphaël Varane",
-        "Romelu Lukaku",
-        "Neymar",
-        "Bernardo Silva",
-        "Sadio Mané",
-        "Stefan de Vrij",
-        "Ederson Moraes",
-        "Nicolo Barella",
-        "Fede Valverde",
-        "Fabinho",
-        "Marc-André ter Stegen",
-        "David Alaba",
-        "Kalidou Koulibaly",
-        "Rodri",
-        "Luis Alberto",
-        "Marco Reus",
-        "Kai Havertz",
-        "Diogo Jota",
-        "Dušan Vlahović",
-        "Lautaro Martínez",
-        "Christopher Nkunku"
-      ])
+    const [footballerList] = useState(playerList)
     const [footballer, setFootballer] = useState(null)
     const [imposterNumber] = useState(getRandomInt(props.playerCount) + 1)
     const [playerCounter, setPlayerCounter] = useState(1)
