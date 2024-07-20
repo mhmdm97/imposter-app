@@ -2,12 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 .button {
- 
   display: inline-block;
   outline: none;
   cursor: pointer;
@@ -24,16 +19,14 @@
   font-weight: 700;
   text-align: center;
   padding: 17px 48px;
-  color: #fff;
-  background-color: #1ED760;
+  color: #d7d7d7;
+  background-color: #16a448;
   height: 48px;
   margin-top: 50px;
-
 }
-.button
-:hover{
-    transform: scale(1.04);
-    background-color: #21e065;
+.button:hover{
+    background-color: #fff;
+    color: #16a448;
 }
 .textbox{
   display: inline-block;
@@ -51,7 +44,9 @@
   overflow: hidden;
   transition: all 100ms ease-in-out;
   min-height: 20px;
-
+  vertical-align: middle;
+  margin-left: 5px;
+  text-align: center;
 }
 .textbox
 :focus {
@@ -59,14 +54,9 @@
     box-shadow: 0 1px 0 0 rgb(35 38 59 / 5%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
-  background-color: #282c34;
+  background-color: #12354d;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -75,16 +65,6 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.form{
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

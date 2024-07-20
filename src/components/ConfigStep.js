@@ -3,7 +3,7 @@ import { useState } from "react"
 function ConfigurationStep(props){
     const [playerNumber, setPlayerNumber] = useState("")
     return (
-        <form onSubmit={() => props.UpdatePlayerNumber(playerNumber)}>
+        <form class="form" onSubmit={() => props.UpdatePlayerNumber(playerNumber)}>
             <label>Player Number: </label>
             <input type="text" 
             className="textbox"
