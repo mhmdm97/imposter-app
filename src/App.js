@@ -1,19 +1,21 @@
 import './App.css';
 import { useState } from 'react';
-import PlayerRevealStep from './components/PlayerRevealStep';
+import RevealStep from './components/RevealStep';
 import ConfigurationStep from './components/ConfigStep';
 
 function App() {
   const [playerCount, setPlayerCount] = useState(null)
+  const [itemListIdentifier, setItemListIdentifier] = useState(0);
   return (
     <div className="App">
+
       <header className="App-header">
-        <h1>Football Imposter</h1>
+        <h1>Imposter App</h1>
         <div>
           {playerCount === null ?
-            <ConfigurationStep UpdatePlayerNumber={setPlayerCount} />
+            <ConfigurationStep setItemListIdentifier={setItemListIdentifier} UpdatePlayerNumber={setPlayerCount} />
             :
-            <PlayerRevealStep UpdatePlayerNumber={setPlayerCount} playerCount={playerCount} />}
+            <RevealStep UpdatePlayerNumber={setPlayerCount} playerCount={playerCount} listIdentifier={itemListIdentifier} />}
         </div>
       </header>
     </div>

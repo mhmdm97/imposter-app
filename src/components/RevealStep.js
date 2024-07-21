@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react"
 import { getRandomFromList, getRandomInt } from "../helpers/StaticMethods"
-import { playerList } from "../constants/constants"
-function PlayerRevealStep(props) {
-    const [footballerList] = useState(playerList)
-    const [footballer, setFootballer] = useState(null)
+import { itemLists } from "../constants/constants"
+function RevealStep(props) {
+    const [itemList] = useState(itemLists[props.listIdentifier].list)
+    const [item, setItem] = useState(null)
     const [imposterNumber] = useState(getRandomInt(props.playerCount) + 1)
     const [playerCounter, setPlayerCounter] = useState(1)
     const [formState, setFormState] = useState(0)
     useEffect(() => {
-        setFootballer(getRandomFromList(footballerList))
-    }, [footballerList])
+        setItem(getRandomFromList(itemList))
+    }, [itemList])
         return (
             <div>
                 {formState === 0 ?
@@ -21,12 +21,14 @@ function PlayerRevealStep(props) {
                             className="textbox"
                                 value = "Imposter"
                                 readonly
+                                disabled
                             />
                             :
                             <input type="text"
                             className="textbox"
-                                value = {footballer}
+                                value = {item}
                                 readonly
+                                disabled
                             />
                         }
                         <br />
@@ -44,4 +46,4 @@ function PlayerRevealStep(props) {
             </div>
         )
 }
-export default PlayerRevealStep
+export default RevealStep

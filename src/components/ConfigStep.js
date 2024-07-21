@@ -1,8 +1,20 @@
 import { useState } from "react"
+import { itemLists } from "../constants/constants"
 
 function ConfigurationStep(props){
     const [playerNumber, setPlayerNumber] = useState("")
+    const [activeList, setActiveList] = useState(0);
+    const updateList = (index) => {
+        props.setItemListIdentifier(index)
+        setActiveList(index)
+    }
     return (
+        <>
+        <ul class="category-picker">
+            {itemLists.map((item, index) => 
+                <li className={activeList === index ? "active" : ""} onClick={() => updateList(index)}>{item.title}</li>
+            )}
+        </ul>
         <form class="form" onSubmit={() => props.UpdatePlayerNumber(playerNumber)}>
             <label>Player Number: </label>
             <input type="text" 
@@ -13,6 +25,7 @@ function ConfigurationStep(props){
             <br />
             <button className="button" type="submit">Next</button>
         </form>
+        </>
     )
 }
 
