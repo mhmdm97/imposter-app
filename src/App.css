@@ -6,7 +6,7 @@
   display: inline-block;
   outline: none;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1;
   border-radius: 500px;
   transition-property: background-color,border-color,color,box-shadow,filter;
@@ -20,13 +20,13 @@
   text-align: center;
   padding: 17px 48px;
   color: #d7d7d7;
-  background-color: #16a448;
+  background-color: black;
   height: 48px;
   margin-top: 50px;
 }
 .button:hover{
-    background-color: #fff;
-    color: #16a448;
+    background-color: #d7d7d7;
+    color: black;
 }
 .textbox{
   display: inline-block;
@@ -69,9 +69,9 @@
   transition-property: background-color,border-color,color,box-shadow,filter;
   transition-duration: .3s;
 }
-.category-picker li:not(:first-child):not(:last-child){
+.category-picker li:not(:first-child){
   margin: 0;
-  margin: 0 10px;
+  margin-left: 10px;
 }
 .category-picker li:not(.active):hover{
   background-color: white;
