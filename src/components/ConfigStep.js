@@ -3,7 +3,7 @@ import { itemLists } from "../constants/constants"
 
 function ConfigurationStep(props){
     const [playerNumber, setPlayerNumber] = useState("")
-    const [activeList, setActiveList] = useState(0);
+    const [activeList, setActiveList] = useState(props.itemListIdentifier);
     const updateList = (index) => {
         props.setItemListIdentifier(index)
         setActiveList(index)

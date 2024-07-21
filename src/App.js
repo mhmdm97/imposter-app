@@ -13,7 +13,7 @@ function App() {
         <h1>Imposter App</h1>
         <div>
           {playerCount === null ?
-            <ConfigurationStep setItemListIdentifier={setItemListIdentifier} UpdatePlayerNumber={setPlayerCount} />
+            <ConfigurationStep setItemListIdentifier={setItemListIdentifier}m itemListIdentifier={itemListIdentifier} UpdatePlayerNumber={setPlayerCount} />
             :
             <RevealStep UpdatePlayerNumber={setPlayerCount} playerCount={playerCount} listIdentifier={itemListIdentifier} />}
         </div>
