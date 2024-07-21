@@ -181,11 +181,5 @@ export const itemLists = [
       "Arnold Schwarznigger",
       "Abdullah hbb albe w 3youne"
     ]
-  },
-  {
-    title: "Pending",
-    list: [
-      "imposter"
-    ]
   }
 ];
