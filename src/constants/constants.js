@@ -155,6 +155,31 @@ export const itemLists = [
         "Khalto Souhair",
         "Khalto Joumana",
         "Mama Hiba",
+        "The Original Birth Giver",
+        "Khalo Houssam"
       ]
+  },
+  {
+    title: "random",
+    list: [
+      "shakhtoura",
+      "safine",
+      "sikine",
+      "takhet",
+      "bayda",
+      "niswen",
+      "mistashfa",
+      "hmar",
+      "ketchup",
+      "khardal",
+      "kharma",
+      "kousa",
+      "sayara",
+      "golf 6 gti red",
+      "tommy (the cat)",
+      "kobe (the og cat)",
+      "Arnold Schwarznigger",
+      "Abdullah hbb albe w 3youne"
+    ]
   }
 ];
