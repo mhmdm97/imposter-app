@@ -160,7 +160,7 @@ export const itemLists = [
       ]
   },
   {
-    title: "random",
+    title: "Random",
     list: [
       "shakhtoura",
       "safine",
@@ -180,6 +180,12 @@ export const itemLists = [
       "kobe (the og cat)",
       "Arnold Schwarznigger",
       "Abdullah hbb albe w 3youne"
+    ]
+  },
+  {
+    title: "Pending",
+    list: [
+      "imposter"
     ]
   }
 ];
