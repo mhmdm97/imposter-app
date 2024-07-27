@@ -9,15 +9,15 @@ function ConfigurationStep(props){
         setActiveList(index)
     }
     return (
-        <>
-        <ul class="category-picker">
+        <div className="config-step">
+        <ul className="category-picker">
             {itemLists.map((item, index) => 
                 <li className={activeList === index ? "active" : ""} onClick={() => updateList(index)}>{item.title}</li>
             )}
         </ul>
-        <form class="form" onSubmit={() => props.UpdatePlayerNumber(playerNumber)}>
+        <form className="form" onSubmit={() => props.UpdatePlayerNumber(playerNumber)}>
             <label>Player Number: </label>
-            <input type="text" 
+            <input type="number" 
             className="textbox"
             value={playerNumber}
             min={3}
@@ -25,7 +25,7 @@ function ConfigurationStep(props){
             <br />
             <button className="button" type="submit">Next</button>
         </form>
-        </>
+        </div>
     )
 }
 

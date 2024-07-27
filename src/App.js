@@ -8,7 +8,10 @@ function App() {
   const [itemListIdentifier, setItemListIdentifier] = useState(0);
   return (
     <div className="App">
-
+      <div className="background-elements">
+        <span className="pole left bottom"></span>
+        <span className="pole right top"></span>
+      </div>
       <header className="App-header">
         <h1>Imposter App</h1>
         <div>

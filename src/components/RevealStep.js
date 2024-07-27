@@ -1,15 +1,14 @@
 import { useEffect, useState } from "react"
 import { getRandomFromList, getRandomInt } from "../helpers/StaticMethods"
 import { itemLists } from "../constants/constants"
+
+//main component to sequentially reveal the item to each player, while hiding the item to one player
 function RevealStep(props) {
-    const [itemList] = useState(itemLists[props.listIdentifier].list)
-    const [item, setItem] = useState(null)
-    const [imposterNumber] = useState(getRandomInt(props.playerCount) + 1)
-    const [playerCounter, setPlayerCounter] = useState(1)
-    const [formState, setFormState] = useState(0)
-    useEffect(() => {
-        setItem(getRandomFromList(itemList))
-    }, [itemList])
+    const [item, setItem] = useState((getRandomFromList(itemLists[props.listIdentifier].list))) //the selected item from the seleced list
+    const [imposterNumber] = useState(getRandomInt(props.playerCount) + 1) //the index of the imposter (the player that doesn't know the item)
+    const [playerCounter, setPlayerCounter] = useState(1) //the current player selecter
+    const [formState, setFormState] = useState(0) //sets the view to either show the item to the player or the reveal button
+    
         return (
             <div>
                 {formState === 0 ?
