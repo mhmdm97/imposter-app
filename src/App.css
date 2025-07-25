@@ -10,32 +10,32 @@
   --success-color: #10b981;
   --danger-color: #ef4444;
   --warning-color: #f59e0b;
-  
+
   /* Sophisticated background colors */
   --background-primary: #0f0f23;
   --background-secondary: #1a1a2e;
   --background-tertiary: #16213e;
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-hover: rgba(255, 255, 255, 0.1);
-  
+
   /* Modern text colors */
   --text-primary: #ffffff;
   --text-secondary: #a0aec0;
   --text-muted: #718096;
-  
+
   /* Enhanced shadows with depth */
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
   --shadow-lg: 0 8px 25px rgba(0, 0, 0, 0.25);
   --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.3);
   --shadow-glow: 0 0 20px rgba(102, 126, 234, 0.4);
-  
+
   /* Border radius variations */
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 16px;
   --radius-xl: 24px;
-  
+
   /* Smooth transitions */
   --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-default: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -50,7 +50,13 @@
 
 .App {
   min-height: 100vh;
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family:
+    'Poppins',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
   background: var(--background-primary);
   color: var(--text-primary);
   position: relative;
@@ -86,13 +92,13 @@
   min-width: 180px;
   margin: 12px 8px;
   overflow: hidden;
-  
+
   /* Glassmorphism effect */
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: var(--text-primary);
-  
+
   /* Gradient overlay */
   background-image: linear-gradient(135deg, var(--primary-color), var(--accent-color));
   box-shadow: var(--shadow-md);
@@ -217,7 +223,12 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--accent-color)
+  );
 }
 
 .form label {
@@ -322,7 +333,12 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+  background: linear-gradient(
+    90deg,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--accent-color)
+  );
 }
 
 .card-title {
@@ -395,7 +411,12 @@
   width: 100vw;
   overflow: hidden;
   z-index: -1;
-  background: linear-gradient(135deg, var(--background-primary) 0%, var(--background-secondary) 50%, var(--background-tertiary) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--background-primary) 0%,
+    var(--background-secondary) 50%,
+    var(--background-tertiary) 100%
+  );
 }
 
 .background-shapes {
@@ -419,7 +440,12 @@
   height: 500px;
   top: -200px;
   left: -150px;
-  background: radial-gradient(circle, rgba(102, 126, 234, 0.3), rgba(102, 126, 234, 0.1), transparent);
+  background: radial-gradient(
+    circle,
+    rgba(102, 126, 234, 0.3),
+    rgba(102, 126, 234, 0.1),
+    transparent
+  );
 }
 
 .shape-2 {
@@ -427,7 +453,12 @@
   height: 700px;
   bottom: -300px;
   right: -250px;
-  background: radial-gradient(circle, rgba(240, 147, 251, 0.3), rgba(240, 147, 251, 0.1), transparent);
+  background: radial-gradient(
+    circle,
+    rgba(240, 147, 251, 0.3),
+    rgba(240, 147, 251, 0.1),
+    transparent
+  );
 }
 
 .shape-3 {
@@ -435,7 +466,12 @@
   height: 400px;
   top: 20%;
   right: 5%;
-  background: radial-gradient(circle, rgba(79, 172, 254, 0.3), rgba(79, 172, 254, 0.1), transparent);
+  background: radial-gradient(
+    circle,
+    rgba(79, 172, 254, 0.3),
+    rgba(79, 172, 254, 0.1),
+    transparent
+  );
 }
 
 /* Enhanced header */
@@ -458,7 +494,12 @@
   text-align: center;
   position: relative;
   letter-spacing: -1px;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--accent-color)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -479,23 +520,23 @@
   .app-title {
     font-size: 36px;
   }
-  
+
   .form {
     padding: 30px 20px;
   }
-  
+
   .reveal-content {
     padding: 30px 20px;
   }
-  
+
   .reveal-text {
     font-size: 24px;
   }
-  
+
   .category-picker {
     grid-template-columns: 1fr;
   }
-  
+
   .button-group {
     flex-direction: column;
     align-items: center;
@@ -506,30 +547,30 @@
   .App-header {
     padding: 40px 15px;
   }
-  
+
   .app-title {
     font-size: 28px;
   }
-  
+
   .card {
     padding: 24px;
   }
-  
+
   .category-picker li {
     padding: 14px 20px;
     font-size: 14px;
   }
-  
+
   .button {
     padding: 14px 24px;
     font-size: 15px;
     min-width: 160px;
   }
-  
+
   .reveal-text {
     font-size: 20px;
   }
-  
+
   .imposter-text {
     font-size: 28px;
   }
