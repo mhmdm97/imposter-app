@@ -256,7 +256,6 @@ export const itemLists: ItemList[] = [
       'Island/Insel',
       'Desert/Wüste',
       'Cave/Höhle',
-      'Treasure/Schatz',
       'Ship/Schiff',
       'Airplane/Flugzeug',
       'Train/Zug',
